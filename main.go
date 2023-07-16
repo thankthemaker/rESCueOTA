@@ -109,8 +109,7 @@ func main() {
 			line = line[:0]
 
 			const BufferSize = 200
-			//file, err := os.Open("/home/dgey/projects/rESCue/.pio/build/wemos_d1_mini32/firmware.bin")
-			file, err := os.Open("/var/home/dgey/small")
+			file, err := os.Open("./firmware.bin")
 			if err != nil {
 				fmt.Println(err)
 				return
